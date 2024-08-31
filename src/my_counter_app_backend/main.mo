@@ -15,4 +15,13 @@ actor {
     counter := 0;
     return counter;
   };
+
+  public func dec() : async Nat {
+    if (counter > 1){
+      counter -= 1;
+      return counter;    
+    } else {
+      return counter;
+    };    
+  };
 };
